@@ -1,1 +1,1 @@
-# svteknoloji.github.io
+# SV Teknoloji Inc.
