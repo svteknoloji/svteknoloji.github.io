@@ -1,0 +1,128 @@
+<!-- Start Footer Area -->
+<footer class="footer1">
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-content logo-footer">
+                        <div class="footer-head">
+                            <div class="footer-logo">
+                                <a href="{{'/' | relative_url }}"><img
+                                        src="{{'/assets/img/logo/logo.png' | relative_url }}" alt="{{site.title}}"></a>
+                            </div>
+                            <p>
+                              SV Teknoloji Inc. is an company with the top  software developers, designers, product managers, and project managers in the world. Top companies work our team for their most important projects.
+
+
+                            </p>
+                            <div class="subs-feilds" style="display:none">
+                                <form action="{{site.mailclimp}}" method="post" class="suscribe-input">
+                                    <input type="email" name="email" class="email form-control width-80" id="sus_email"
+                                        placeholder="Type Email">
+                                    <button type="submit" id="sus_submit" class="add-btn">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-2">
+                    <div class="footer-content" style="display:none">
+                        <div class="footer-head">
+                            <h4>Services Link</h4>
+                            <ul class="footer-list">
+                                {% for service in site.services limit:5 %}
+                                <li><a href="{{service.url | relative_url}}">{{service.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-content" style="display:none">
+                        <div class="footer-head">
+                            <h4>Projects Link</h4>
+                            <ul class="footer-list">
+                                {% for project in site.projects limit:4 %}
+                                <li><a href="{{project.url | relative_url}}">{{project.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-3">
+                    <div class="footer-content last-content">
+                        <div class="footer-head">
+                            <h4>Information</h4>
+                            <div class="footer-contacts">
+                                <p><span>Location :</span> 156 2nd Street <br>San Francisco, CA 94105</p>
+                                <p><span>Tel :</span> (669) 256-3894</p>
+                                <p><span>Email :</span> contact@svteknoloji.com</p>
+                            </div>
+                            <div class="footer-icons">
+                                <ul>
+                                    {% if site.facebook %}
+                                    <li>
+                                        <a href="{{site.facebook | relative_url}}">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if site.twitter %}
+                                    <li>
+                                        <a href="{{site.twitter | relative_url}}">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if site.pinterest %}
+                                    <li>
+                                        <a href="{{site.pinterest | relative_url}}">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if site.instagram %}
+                                    <li>
+                                        <a href="{{site.instagram | relative_url}}">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer Bottom Area -->
+    <div class="footer-area-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="copyright">
+                        <p class="copyright-text m-0">©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>. Design in <i class="ti-heart text-success"></i> California
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="{{'/about' | relative_url }}">About</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Bottom Area -->
+</footer>
+<!-- End Footer Area -->
